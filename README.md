@@ -16,13 +16,13 @@
 
 ## Installing
 
-```bash
+```sh
  $npm install
 ```
 
 ## Start
 
-```bash
+```sh
 $npm run start
 ```
 
@@ -32,13 +32,6 @@ $npm run start
 $docker build -t uws:1 .
 $docker run -p 3000:3001 -d uws:1
 $docker-compose up -d
-
-```
-
-## Connection Link
-
-```bash
-$bet-gaming-chat-dev.betcoapps.com
 
 ```
 
