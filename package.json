@@ -1,0 +1,24 @@
+{
+  "name": "bet-gaming-chat",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "hermes": "npm config set strict-ssl false && npm set registry https://npm.betconstruct.int:8888/ && npm install Hermes && npm set registry https://registry.npmjs.org/ && npm config set strict-ssl true"
+  },
+  "author": "Andranik Barseghyan",
+  "license": "ISC",
+  "dependencies": {
+    "Hermes": "^1.1.4",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.10",
+    "nats": "^1.4.8",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

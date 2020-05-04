@@ -1,0 +1,20 @@
+version: "2"
+services:
+  uws:
+    build: .
+    command: "npm start"
+  nats:
+    image: nats:2.1.4-alpine3.11
+    hostname: "nats"
+    ports:
+      - "4222:4222"
+      - "6222:6222"
+      - "8222:8222"
+  mongodb:
+    image: mongo:latest
+    restart: always
+    hostname: "mongodb"
+    environment: 
+      - "MONGODB_DATABASE=ChatDB"
+    ports:
+      - "27017:27019"
