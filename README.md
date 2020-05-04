@@ -1,4 +1,4 @@
-# Bet Gameing Chat
+# WS-uWebSockets
 
 [![GitLab](https://img.shields.io/badge/chat-Processing-green)](https://gitlab.betconstruct.int/bet-gaming-chat/bet-gaming-chat)
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)]()
@@ -50,5 +50,3 @@ $bet-gaming-chat-dev.betcoapps.com
 ## Schema
 
 ![alt-text](https://res.infoq.com/news/2019/07/nats-event-messaging-release/en/resources/1NATS-1562077804644.png)
-
-This project has been adopted by ... .
