@@ -5,6 +5,13 @@
 
 ```sh
 .
+└───src
+    ├───api
+    ├───config
+    ├───db
+    │   └───interface
+    ├───models
+    └───service
 
 ```
 
