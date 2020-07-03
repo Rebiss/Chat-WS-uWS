@@ -53,6 +53,10 @@ async function onOpen(socket, request) {
 	const token = socket.handshake.query.token;
 	const user = await Casino.authenticate(token);
 
+	// console.log('*******QUery***********', socket.handshake)
+
+	// /?token=d001f2caa4d358c54c961bbcaf201&language=hy&partnerid=1&gameId=5000000&exitUrl=https://games.vivarobet.am/GoToHome?Id=gaming.vivarobet.am/#/casino
+
 	if ( user && user.partner_id ) {
 		const room = `chat-room-${user.partner_id}`;
 		// console.log(`Joining user to room: ${room}`);
@@ -87,7 +91,9 @@ async function onMessage(socket, message) {
 	const user = socket.user;
 	const { topic, data } = message;
 	
-	const nikeName = `${user.username[0]}***${user.username.slice(-1)}`; 
+	const nikeName = `${user.username[0]}***${user.username.slice(-1)}`;
+
+	console.log('****MESSAGE*****',message.data.room) 
 
 	switch ( topic ) {
 		case 'chat:message': {
@@ -117,7 +123,10 @@ async function onMessage(socket, message) {
 	}
 }
 
-async function onPing(socket) {}
+async function onPing(socket) {
+
+	console.log('PING*****',)
+}
 
 async function onClose(socket) {}
 

@@ -1,4 +1,4 @@
-# WS-uWebSockets
+# Bet Gameing Chat
 
 [![GitLab](https://img.shields.io/badge/chat-Processing-green)](https://gitlab.betconstruct.int/bet-gaming-chat/bet-gaming-chat)
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)]()
@@ -16,13 +16,13 @@
 
 ## Installing
 
-```sh
+```bash
  $npm install
 ```
 
 ## Start
 
-```sh
+```bash
 $npm run start
 ```
 
@@ -35,6 +35,13 @@ $docker-compose up -d
 
 ```
 
+## Connection Link
+
+```bash
+$bet-gaming-chat-dev.betcoapps.com
+
+```
+
 ## Documentation
 
 - [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js)
@@ -43,3 +50,5 @@ $docker-compose up -d
 ## Schema
 
 ![alt-text](https://res.infoq.com/news/2019/07/nats-event-messaging-release/en/resources/1NATS-1562077804644.png)
+
+This project has been adopted by ... .
